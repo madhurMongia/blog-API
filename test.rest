@@ -1,0 +1,31 @@
+POST http://127.0.0.1:8000/user/login/
+Content-Type: application/json
+
+{
+    "username": "test_1@email.com",
+    "password": "12345678"
+}
+###
+GET http://127.0.0.1:8000/user/logout/
+Authorization: Token fe2286b49dcfd677892a721b10c6305f986de250
+###
+GET http://127.0.0.1:8000/api/
+Authorization: Token d857cc5afdb73540672aa27842c37608607b6821
+
+###
+DELETE http://127.0.0.1:8000/api/dashboard/django-rest-framework/
+Authorization: Token 6d44e2e4292d8e6b4601782375d64f148fb8e21e
+Content-Type: application/json
+
+{
+    "content" : "test_content1"
+}
+
+###
+POST http://127.0.0.1:8000/api/dashboard/django-rest-framework/toggle_publish/
+Authorization: Token 6d44e2e4292d8e6b4601782375d64f148fb8e21e
+Content-Type: application/json
+
+{
+    "publish":"1"
+}
