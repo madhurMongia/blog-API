@@ -1,0 +1,7 @@
+{
+    "material-icon-theme.folders.associations": {
+        "customFolderName": "accounts",
+        "sample": "admin"
+    },
+    "git.ignoreLimitWarning": true
+}
